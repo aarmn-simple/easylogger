@@ -1,5 +1,8 @@
 README.md
 setup.py
+easylogger/__init__.py
+easylogger/logger.py
+easylogger/test.py
 easylogger.egg-info/PKG-INFO
 easylogger.egg-info/SOURCES.txt
 easylogger.egg-info/dependency_links.txt
