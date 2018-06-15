@@ -21,13 +21,13 @@ a.logwrite("file IO","all of sdcard files are corrupted")
 
     import easylogger
 
-    a=easylogger.logs("./xapp.log","X app log","all of things happening in X app is written here")
+    a=easylogger.easylogger.logs("./xapp.log","X app log","all of things happening in X app is written here")
     a.logwrite("mouse move","127*148 RU",0)
     a.logwrite("hello","127*148 RU",0)
 
     a=None #simulating when app is closed
 
-    a=easylogger.logs("./xapp.log","X app log","all of things happening in X app is written here")
+    a=easylogger.easylogger.logs("./xapp.log","X app log","all of things happening in X app is written here")
     a.logwrite("mouse move","127*148 RU",0)
     a.logwrite("hello","127*148 RU",0)
 
