@@ -1,5 +1,5 @@
-from datetime import datetime
-import os
+from datetime import datetime as _datetime
+import os as _os
 
 # log:            [(number in session , number over session , date , time) >>> title : message]
 # title:          **************** {your title} ****************

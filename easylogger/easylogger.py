@@ -1,5 +1,5 @@
-from datetime import datetime
-import os
+from datetime import datetime as _datetime
+import os as _os
 
 # log:            [(number in session , number over session , date , time) >>> title : message]
 # title:          **************** {your title} ****************
@@ -9,7 +9,7 @@ import os
 # session:        ================ Session {session code} ================
 #title detail session 0
 #
-#
+
 
 class _degrees:
     def __init__(self,leveln):
@@ -62,3 +62,5 @@ class logs:
         logs.logfile.write("%s%d%s%s%s%s%s%s%s%s%s"%("[(",logs.numlogs,",{",str(datetime.now()),"}) ",str(degree)," >>> ",title," : \"",message,"\"]\n"))
         logs.logfile.close()
         logs.numlogs+=1
+
+    __all__=["logs","logs.logwrite"]
