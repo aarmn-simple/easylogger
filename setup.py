@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="easylogger",
-    version="1.0.5",
+    version="2.0.0",
     author="AARMN",
     author_email="aarmn80@gmail.com",
     description="A tiny logger , make life a little easier",
