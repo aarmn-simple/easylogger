@@ -10,7 +10,7 @@ import os
 #title detail session 0
 #
 #
-__all__ = ['logs']
+
 class _degrees:
     def __init__(self,leveln):
         _degrees.leveln=leveln

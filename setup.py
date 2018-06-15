@@ -8,10 +8,10 @@ setuptools.setup(
     version="0.0.9",
     author="AARMN",
     author_email="aarmn80@gmail.com",
-    description="A tiny logger for make life a little more simple",
+    description="A tiny logger , make life a little easier",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/example-project",
+    url="https://gitlab.com/public-aarmn-simple/easylogger",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
