@@ -36,7 +36,7 @@ class logs:
         logs.numlogs=0
         ##########################################
         x=False
-        if os.path.isfile(filename):
+        if _os.path.isfile(filename):
             x=True
         if (x==False):
             logs.logfile = open(filename, 'a+',encoding="utf-8")
@@ -44,7 +44,7 @@ class logs:
                 logs.logfile.write("%s%s%s"%("**************** ",logs.logname," ****************\n"))
             if (logs.logdet != ""):
                 logs.logfile.write("%s%s%s"%("----------------\n",logs.logdet,"\n----------------\n"))
-            logs.logfile.write("%s%s%s"%("================ Session:0[",str(datetime.now()),"] ================\n"))
+            logs.logfile.write("%s%s%s"%("================ Session:0[",str(_datetime.now()),"] ================\n"))
             logs.logfile.close()
         else:
             numcurse=0
@@ -54,12 +54,12 @@ class logs:
                 if (tmps[0:16]=="================"):
                     numcurse+=1
             tmp.close()
-            logs.logfile.write("%s%s%s%s%s%s"%("================ Session:",str(numcurse),"[",str(datetime.now()),"]"," ================\n"))
+            logs.logfile.write("%s%s%s%s%s%s"%("================ Session:",str(numcurse),"[",str(_datetime.now()),"]"," ================\n"))
             logs.logfile.close()
     def logwrite(self,title="",message="",deg=0):
         degree=_degrees(deg)
         logs.logfile = open(logs.filename,'a+',encoding="utf-8")
-        logs.logfile.write("%s%d%s%s%s%s%s%s%s%s%s"%("[(",logs.numlogs,",{",str(datetime.now()),"}) ",str(degree)," >>> ",title," : \"",message,"\"]\n"))
+        logs.logfile.write("%s%d%s%s%s%s%s%s%s%s%s"%("[(",logs.numlogs,",{",str(_datetime.now()),"}) ",str(degree)," >>> ",title," : \"",message,"\"]\n"))
         logs.logfile.close()
         logs.numlogs+=1
 
