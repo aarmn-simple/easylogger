@@ -10,12 +10,12 @@ ogger.logs.logwrite is the only function have three parameters title ,message an
 for example
 a.logwrite("file IO","all of sdcard files are corrupted")
 ## degree
-0>>trace
-1>>debug
-2>>info
-3>>warn
-4>>err
-5>>fatal
+0>>trace    
+1>>debug    
+2>>info    
+3>>warn    
+4>>err    
+5>>fatal    
 
 ## Sample Code
 
@@ -25,7 +25,7 @@ a.logwrite("file IO","all of sdcard files are corrupted")
     a.logwrite("mouse move","127*148 RU",0)
     a.logwrite("hello","127*148 RU",0)
 
-    a=None #simulating when app is closed
+    a=None # simulating when app is closed
 
     a=easylogger.easylogger.logs("./xapp.log","X app log","all of things happening in X app is written here")
     a.logwrite("mouse move","127*148 RU",0)
