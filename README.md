@@ -2,11 +2,11 @@
 easylogger is the most simple way to write your logs . just make a **logs** object , we can handle session counting and count logs and 6 level of importance for logs (0,5).
 
 ## logs
-the main method just write easylogger.logs("your file dest (default is ./log.txt)","your log name","your log details")
+the main method just write easylogger.easylogger.logs("your file dest (default is ./log.txt)","your log name","your log details")
 for example
-a=easylogger.logs("./click.log","clicks log","here we have log of clicks from 2012")
+a=easylogger.easylogger.logs("./click.log","clicks log","here we have log of clicks from 2012")
 ## logwrite
-ogger.logs.logwrite is the only function have three parameters title ,message and degree (0,5)
+easylogger.easylogger.logs.logwrite is the only function have three parameters title ,message and degree (0,5)
 for example
 a.logwrite("file IO","all of sdcard files are corrupted")
 ## degree
