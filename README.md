@@ -1,6 +1,6 @@
 # easylogger
 easylogger is the most simple way to write your logs . just make a **logs** object , we can handle session counting and count logs and 6 level of importance for logs (0,5).
-pip install easylogger
+pip install easylogger,
 import easylogger 
 ## logs
 the main method just write easylogger.easylogger.logs("your file dest (default is ./log.txt)","your log name","your log details")
